@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #094A6F, #64C8BD) no-repeat;
+    font-weight: 500;
+}
+    
+
+
+.header
+{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 110px 15px;
+}
+
+.header-logo-l1
+{
+    display: flex;
+    width: 129px;
+    height: 25px;
+    color: #76FEC5;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.form
+{
+    position: relative;
+}
+
+.form-button
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 10px;
+}
+
+.form-img
+{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 10px;
+}
+
+.form-input
+{
+    width: 551px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    color: #fff;
+}
+
+.form-input::placeholder
+{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-input:focus
+{
+    outline: none;
+}
+
+.header-list
+{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.header-link
+{
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header-link-gradient
+{
+    background: linear-gradient(to right, #11966a, #2edeac);
+    border-radius: 14px;
+    padding: 10px 20px;
+}
+
+.content-area 
+{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.main
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-text
+{
+    flex-basis: 490px;
+}
+
+.main-title
+{
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.24;
+    padding: 0;
+}
+
+.main-desc
+{
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.main-btn
+{
+    margin: 40px 0px 0px;
+    display: block;
+    padding: 23px 0px;
+    width: 240px;
+    font-size: 21px;
+    font-weight: 700;
+    border-radius: 14px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-btn-gradient
+{
+    background: linear-gradient(to right, #11966a, #2edeac);
+    color: #fff;
+}
