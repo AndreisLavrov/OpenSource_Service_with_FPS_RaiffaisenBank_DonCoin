@@ -152,3 +152,51 @@ body
     background: linear-gradient(to right, #11966a, #2edeac);
     color: #fff;
 }
+
+.instructions-list
+{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    gap: 110px;
+}
+
+.instr-item
+{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.instr-span
+{
+    display: block;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.instr-title
+{
+    padding-top: 250px;
+    text-align: center;
+}
+
+.widget-title
+{
+    padding-top: 250px;
+    text-align: center;
+}
+
+.end-contact
+{
+    display: block;
+    text-align: center;
+    padding-top: 250px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
