@@ -12,7 +12,7 @@ import org.json.JSONObject;
 public class HttpRequestPost {
     public static void main (String [] args) {
 
-        String urlAdress = "https://pay-test.raif.ru/api/sbp/v2/qrs";
+        String urlAddress = "https://pay-test.raif.ru/api/sbp/v2/qrs";
         URL url;
         HttpURLConnection httpURLConnection;
         OutputStream OS = null;
@@ -31,7 +31,7 @@ public class HttpRequestPost {
 
             byte [] out = json.toString().getBytes();
 
-            url = new URL(urlAdress);
+            url = new URL(urlAddress);
             httpURLConnection = (HttpURLConnection)url.openConnection();
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setDoOutput(true);
