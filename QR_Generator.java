@@ -9,7 +9,7 @@ import org.json.JSONObject;
 
 
 
-public class HttpRequestPost {
+public class QR_Generator {
     public static void main (String [] args) {
 
         String urlAddress = "https://pay-test.raif.ru/api/sbp/v2/qrs";
