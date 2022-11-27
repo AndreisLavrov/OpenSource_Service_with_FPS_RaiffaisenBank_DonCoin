@@ -25,9 +25,22 @@ body
     width: 129px;
     height: 25px;
     color: #76FEC5;
-    font-size: 20px;
+    position: absolute;
+    font-size: 36px;
     line-height: 25px;
+    top: 3.8%;
+    left: 6.5%;
     text-decoration: none;
+}
+
+.header-logo-l2
+{
+    display: flex;
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    top: 2.25%;
+    left: 50%;
 }
 
 .form
