@@ -1,46 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 body
 {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #094A6F, #64C8BD) no-repeat;
     font-weight: 500;
 }
-    
 
+.container
+{
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
 
 .header
 {
-    max-width: 1600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 15px 110px 15px;
+    padding: 2rem 1rem 10rem 1rem;
 }
 
 .header-logo-l1
 {
     display: flex;
-    width: 129px;
-    height: 25px;
     color: #76FEC5;
     position: absolute;
     font-size: 36px;
-    line-height: 25px;
-    top: 3.8%;
-    left: 6.5%;
-    text-decoration: none;
+    line-height: 3.5rem;
+    top: 3.1%;
+    left: 14%;
 }
 
 .header-logo-l2
 {
     display: flex;
     position: absolute;
-    width: 750px;
-    height: 750px;
-    top: 2.25%;
-    left: 50%;
+    width: 6rem;
+    height: 7.6rem;
+    top: -0.5%;
+    left: 9.8%;
 }
 
 .form
@@ -51,29 +66,27 @@ body
 .form-button
 {
     display: block;
-    width: 20px;
-    height: 20px;
     background-color: transparent;
-    border: none;
     position: absolute;
-    top: calc(50% - 10px);
-    left: 10px;
+    top: calc(50% - 1rem);
+    left: 1rem;
 }
 
 .form-img
 {
     position: absolute;
-    top: calc(50% - 10px);
-    left: 10px;
+    top: calc(50% - 1rem);
+    top: 0.5rem;
+    left: 0.5rem;
 }
 
 .form-input
 {
-    width: 551px;
+    width: 34rem;
     background: rgba(255, 255, 255, 0.1);
     border: none;
-    border-radius: 10px;
-    padding: 10px 40px;
+    border-radius: 0.8rem;
+    padding: 0.7rem 3rem;
     color: #fff;
 }
 
@@ -91,29 +104,29 @@ body
 {
     display: flex;
     list-style-type: none;
-    gap: 40px;
+    gap: 2.8rem;
 }
 
 .header-link
 {
     color: #fff;
-    list-style-type: none;
-    text-decoration: none;
 }
 
 .header-link-gradient
 {
     background: linear-gradient(to right, #11966a, #2edeac);
-    border-radius: 14px;
-    padding: 10px 20px;
+    border-radius: 0.8rem;
+    padding: 0.6rem 1.5rem;
 }
 
 .content-area 
 {
-    max-width: 1600px;
+    width: 85%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: #fff;
 }
 
@@ -125,7 +138,7 @@ body
 
 .main-text
 {
-    flex-basis: 490px;
+    flex-basis: 30rem;
 }
 
 .main-title
@@ -140,21 +153,21 @@ body
 {
     display: block;
     color: rgba(255, 255, 255, 0.5);
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
 }
 
 .main-btn
 {
-    margin: 40px 0px 0px;
+    margin: 2rem 0rem 0rem;
     display: block;
-    padding: 23px 0px;
-    width: 240px;
+    padding: 1.2rem 0rem;
+    width: 18rem;
     font-size: 21px;
     font-weight: 700;
-    border-radius: 14px;
+    border-radius: 0.8rem;
     letter-spacing: -0.2px;
     text-align: center;
     text-decoration: none;
@@ -166,13 +179,18 @@ body
     color: #fff;
 }
 
+.instructions
+{
+    padding-top: 12rem;
+    text-align: center;
+    
+}
+
 .instructions-list
 {
     display: flex;
-    list-style-type: none;
     padding-left: 0;
-    text-align: center;
-    gap: 110px;
+    gap: 11rem;
 }
 
 .instr-item
@@ -192,23 +210,35 @@ body
     text-align: center;
 }
 
-.instr-title
+
+.widget
 {
-    padding-top: 250px;
-    text-align: center;
+    padding-top: 12rem;
+    text-align:center;
 }
 
-.widget-title
+.text-iframe
 {
-    padding-top: 250px;
+    line-height: 1.31;
     text-align: center;
+    color: #fff;
+    background-color: rgba(216, 216, 216, 0.2);
+    word-break: break-word;
+    margin-top: 1.8rem;
+    transition: all 2s ease-out 0s;
+    border-radius: 0.8rem;
+    height: 100%;
+    padding: 1.2rem 1.2rem;
+    user-select: all;
 }
+
 
 .end-contact
 {
     display: block;
     text-align: center;
-    padding-top: 250px;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
     color: rgba(255, 255, 255, 0.5);
 }
 
