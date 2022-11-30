@@ -9,10 +9,10 @@ import org.json.JSONObject;
 
 
 
-public class QR_Generator {
+public class Sub_QR_Generator {
     public static void main (String [] args) {
 
-        String urlAddress = "https://pay-test.raif.ru/api/sbp/v2/qrs";
+        String urlAddress = "https://pay-test.raif.ru/api/sbp/v1/subscriptions";
         URL url;
         HttpURLConnection httpURLConnection;
         OutputStream OS = null;
@@ -24,13 +24,14 @@ public class QR_Generator {
         try {
             JSONObject json = new JSONObject();
 
-            json.put("qrType", "QRStatic");
+            // ID подписки на стороне партнёра
+            json.put("id", "0a3509c9-1ff6-4a47-839e-a68964daa2b6");
 
-            // сумма на оплату
-            json.put("amount", 100);
+            // Описание подписки которое увидит клиент в приложении банка
+            json.put("subscriptionPurpose", "Тестовая подписка");
 
-            // ID заказа в системе партнёра
-            json.put("order", "a9384868-6e4d-11ed-a1eb-0242ac120002");
+            // Ссылка, куда которой клиента вернет после оплаты
+            json.put("redirectUrl", "https://doncoin.netlify.app");
             json.put("sbpMerchantId", "MA999438");
 
             byte [] out = json.toString().getBytes();
