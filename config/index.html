@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurator</title>
+    <link rel="stylesheet" href="./css_configurator/main.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <div class="header">
+                    <div class="header_name">DONCOIN</div>
+                </div>
+                <form>
+                    <div class="main_forms">
+                        <h2 class="configurator_name">Configurator of widgets</h2>
+                        <!-- <div name="widget_size">
+                            <div>small widget</div>
+                            <div>big widget</div>
+                            <div>button</div>
+                        </div> -->
+        
+                        <div class="header_of_widget">
+                            <label>Header of widget</label>
+                            <input type="text" class="place" id="header-widget" placeholder="Enter your header" value="DonCoin Donation" placeholder="Enter your header" maxlength="20">
+                        </div>
+        
+                        <div class="description_of_widget">
+                            <label>Description of widget</label>
+                            <input type="text" class="place" id="description-widget" placeholder="Enter your description" value="Best donation Fond" maxlength="40">
+                        </div>
+        
+                        <!-- <div class="logo_on_widget">
+                            <label>Logo on Widget</label>
+                            <p class="label_description">logo size should be 150 x 150</p>
+                            <input type="file" id="logo-widget" accept='image/*'>
+                        </div> -->
+        
+                        <div class="color_of_button">
+                            <label>Color of button</label>
+                            <input type="color" id="button-color-picker" value="#47CDE8">
+                        </div>
+        
+                        <!-- <div class="color_of_text">
+                            <label>Color of text on button</label>
+                            <p class="label_description">when user enter something</p>
+                            <input type="color" id="text-color-picker" value="#F6F6F6">
+                        </div> -->
+    
+                        <div class="sbp_Merchant_id">
+                            <label class="label_merchant">Sbp Merchant ID</label>
+                            <input type="text" class="place" id="sbpMerchantId" value="MA999438" placeholder="Enter your sbpMerchantId">
+                      </div>
+                    </div>
+                </form>
+                <div class="footer"></div>
+              </div>
+            <div class="demo-container">
+                <!-- <div class="button-group">
+                    <button class="design-btn">Design</button>
+                    <button class="code-btn">Code</button>
+                </div> -->
+                <div class="demo-box">
+                    <div class="demo-box-content">
+                        <div class="demo-box-text">
+                            <h3 id="demo-box-header-text">DonCoin Donation</h3>
+                            <p id="demo-box-description-text">Best donation Fond</p>
+                        </div>
+                        <div class="demo-image-box">
+                            <img class="demo-logo" id="widget" src="./img/charity_2.png" alt="QR">
+                            <p class="image_description">
+                                Scan the QR
+                                <br /> 
+                                <br />
+                                Let's save
+                                the world
+                                <br />together
+                            </p>
+                        </div>
+                        <div class="price-description">
+                            Enter the donation amount
+                        </div>
+                        <input type ='number' name='myButton' id='myButton' class='myButton' placeholder = 'enter sum' min = '100' max = '50000'/>
+                    </div>
+                </div>
+
+                
+                <div class="widget_code_300" id="widget_code_300">
+                    &lt;iframe src=
+                    <span id="my-url">"https://donwidgetsmall.doncoin.site/"</span> 
+                    width=
+                    <span>"300"</span> 
+                    height=
+                    <span>"300"</span>
+                    allowTransparency=
+                    <span>"true"</span> 
+                    scrolling=
+                    <span>"no"</span> 
+                    frameBorder=
+                    <span>"0"</span>
+                    &gt;&lt;/iframe&gt;
+                </div>
+
+                <iframe class="widget-iframe-img" width="300" height="300" src="https://donwidgetsmall.doncoin.site/" scrolling="no"></iframe>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js_configurator/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</html>
+
