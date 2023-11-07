@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>widget</title>
+    <link rel="stylesheet" href="./css_widget/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="block widget">
+        <div class="block widget_row">
+            <div class="block widget_image_block">
+                <div class="widget_image">
+                    <img id="widget" src="./img/charity_2.png" alt="QR">
+                </div>
+
+                <div class="widget__form-state-card">
+                    <a href="https://doncoincard.netlify.app/" target="_blank">
+                        <!-- <button type="button" id="make_donation3" class="widget_button widget_button_card" >BY CARD 
+                        </button>  -->
+                    </a>
+                    <div class="hash">#DonCoin</div>
+                </div>
+  
+            </div>
+            <div class="block widget_main_block">
+                <h1 class="widget_title">DonCoin Donation</h1>
+                
+                <div class="widget_text">
+                    By making a donation, you gratuitously help save someone's life, give someone a roof over their head, or simply save them from hunger. It's not much for you, but for someone it's life.
+                </div>
+
+                <div class="price_description">
+                    Select the amount or enter your
+                </div>
+                <div class="widget__form-state">
+                    <div class="widget__variants">
+                        <form>
+                            <button type="button" id="make-donation1" class="widget_button widget__button--inline">100₽
+                            </button>
+                            <button type="button" id="make-donation2" class="widget_button widget__button--inline">300₽
+                            </button>
+                            <input type ='number' class="input" id='input' placeholder = 'Other sum' min = '100' max = '50000'/>
+                        </form>
+                    </div>
+    
+                </div>
+
+            </div>          
+            
+        </div>
+
+    </div>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="./js_widget/main.js"></script>
+</body>
+</html>
