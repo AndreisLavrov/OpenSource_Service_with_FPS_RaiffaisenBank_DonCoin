@@ -62,7 +62,7 @@ function updateIframeSrc() {
   const description = encodeURIComponent(storedData.description);
   const buttonColor = encodeURIComponent(storedData.buttonColor);
 
-  const iframeSrc = `https://donwidgetsmall.doncoin.site/?header=${header}&description=${description}&button_color=${buttonColor}`;
+  const iframeSrc = `https://doncoindemowidgetsmall.netlify.app/?header=${header}&description=${description}&button_color=${buttonColor}`;
 
   const iframe = document.querySelector('.widget-iframe-img');
   iframe.src = iframeSrc;
